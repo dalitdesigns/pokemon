@@ -76,8 +76,10 @@
 		});
 	</script>
 
-	<script type="text/javascript">
-		if ('serviceWorker' in navigator) {
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="text/javascript">
+    	if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/service-worker.js')
     .then((registration) => {
       console.log('Service Worker registered:', registration);
@@ -87,10 +89,7 @@
     });
 }
 
-	</script>
-
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    </script>
 
 	</body>
 </html>
