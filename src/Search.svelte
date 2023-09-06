@@ -88,7 +88,6 @@
 </section>
 
 {#if !query}
-  <h3>Browse cards below, Or search for your favourite!</h3>
 {/if}
 
 {#if usableQuery && loadingQuery}
@@ -155,7 +154,7 @@
 
   @media screen and ( min-width: 900px ) {
     .search-area {
-      margin: 120px 50px 0;
+      margin: 40px auto;
       font-size: 22px;
     }
     h3 {
