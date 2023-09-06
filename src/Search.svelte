@@ -142,7 +142,7 @@
     display: grid;
     place-items: center start;
     max-width: 500px;
-    margin: 120px 0 10px;
+    margin: 50px 0 10px;
     padding: 5px;
     position: sticky;
     top: 10px;
