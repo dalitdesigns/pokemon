@@ -58,6 +58,10 @@
 		<link rel="stylesheet" href="css/cards/shiny-vmax.css" />
 		<link rel="stylesheet" href="css/cards/swsh-pikachu.css" />
 
+
+		<link rel="manifest" href="/manifest.json">
+
+
 	</head>
 	<body>
 			
@@ -70,6 +74,19 @@
 		gtag('config', '%VITE_GA%', {
 			'linker': { 'domains': ['poke-holo.simey.me', 'deck-24abcd.netlify.app'] }
 		});
+	</script>
+
+	<script type="text/javascript">
+		if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then((registration) => {
+      console.log('Service Worker registered:', registration);
+    })
+    .catch((error) => {
+      console.log('Service Worker registration failed:', error);
+    });
+}
+
 	</script>
 
     <div id="app"></div>
